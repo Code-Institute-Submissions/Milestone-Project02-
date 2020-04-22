@@ -1,0 +1,18 @@
+.carousel-item {
+  height: 450px;
+}
+
+.carousel-image-1 {
+  background: url('/Milestone-Project02-/assests/img/sofitel-resort-beach-bora-bora.jpg');
+  background-size: auto;
+}
+
+.carousel-image-2 {
+  background: url('../img/image2.jpg');
+  background-size: cover;
+}
+
+.carousel-image-3 {
+  background: url('../img/image3.jpg');
+  background-size: cover;
+}
