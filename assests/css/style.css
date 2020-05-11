@@ -15,3 +15,10 @@
   width: 100%;
   position: absolute;
 }
+
+/*style for contact page map */
+
+#map {
+  height: 400px;
+  width: 100%;
+}
