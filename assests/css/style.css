@@ -22,3 +22,16 @@
   height: 400px;
   width: 100%;
 }
+
+/*Weather display on about page*/
+
+.weather-container {
+  width: 300px;
+  background-color: #fff;
+
+  display: block;
+  margin: 0 auto;
+
+  border-radius: 10px;
+  padding-bottom: 50px;
+}
