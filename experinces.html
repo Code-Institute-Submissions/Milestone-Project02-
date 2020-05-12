@@ -23,8 +23,8 @@
   <body>
     <h1>Bora Bora VIP!</h1>
 
-<!--Nav Bar start-->
-<nav
+    <!--Nav Bar start-->
+    <nav
       class="navbar navbar-expand-sm navbar-light bg-light fixed-top"
       id="main-nav"
     >
@@ -35,7 +35,7 @@
           data-toggle="collapse"
           data-target="#navbarCollapse"
         >
-      <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav ml-auto">
@@ -46,197 +46,220 @@
               <a href="about.html" class="nav-link">About</a>
             </li>
             <li class="nav-item">
-              <a href="experinces.html" class="nav-link">Experinces & Activites</a>
+              <a href="experinces.html" class="nav-link"
+                >Experinces & Activites</a
+              >
             </li>
             <li class="nav-item">
               <a href="contact.html" class="nav-link">Contact</a>
             </li>
           </ul>
+        </div>
+      </div>
+    </nav>
+    <!--Nav Bar end-->
+
+    <!-- PAGE HEADER -->
+    <header id="page-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 m-auto text-center">
+            <h1>header</h1>
+            <p>Text</p>
           </div>
-          </nav>
-<!--Nav Bar end-->
+        </div>
+      </div>
+    </header>
 
-<!-- PAGE HEADER -->
-<header id="page-header">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6 m-auto text-center">
-        <h1>header</h1>
-        <p>Text</p>
+    <!-- Fine Dining Section -->
+    <section id="services"></section>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 m-auto text-center">
+          <h2>Fine Dining</h2>
+          <p>Text</p>
+        </div>
       </div>
     </div>
-  </div>
-</header>
 
+    <!-- Card deck -->
+    <div class="card-deck">
+      <!-- Card -->
+      <div class="card mb-4">
+        <div class="view overlay">
+          <img
+            class="card-img-top"
+            src="/assests/img/bobxr-bam-boo-restaurent-3960-hor-clsc.jpg"
+            alt="Card image cap"
+          />
+          <a href="#!">
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
 
-
-
-
-<!-- Fine Dining Section -->
-<section id="services" class="py-3"></section>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6 m-auto text-center">
-        <h1>Fine Dining</h1>
-        <p>Text</p>
+        <!--Card content-->
+        <div class="card-body">
+          <h4 class="card-title">Bam Boo Restaurant</h4>
+          <p class="card-text">
+            Bam Boo revitalises the Resort’s Asian dining experience with the
+            introduction of wok and teppanyaki options alongside our guests’
+            longtime sushi favourites. Traditional Chinese wok dishes such as
+            Kung Pao chicken and Sichuan style shrimp star on the opening menu
+            while local lagoon fish is accomodate in a chinese style. On the
+            Japanese menu, the Sushi Chef sublimate the freshest caught fish
+            with delicate flair. Sushi bestsellers include the Volcano and the
+            Red Dragon Roll. Variety is further enhanced with the addition of a
+            Teppanyaki stove, visible from the counter seating, from which
+            guests may order hot dishes.
+          </p>
+        </div>
       </div>
-    </div>
-  </div>
 
+      <!-- Card 2 -->
+      <div class="card mb-4">
+        <div class="view overlay">
+          <img
+            class="card-img-top"
+            src="/assests/img/bobxr-lagoon-restaurant-4148-hor-clsc.jpg"
+            alt="Card image cap"
+          />
+          <a href="#!">
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
 
-<!-- Card deck -->
-<div class="card-deck">
+        <!--Card content-->
+        <div class="card-body">
+          <h4 class="card-title">The Bora Bora VIP Bloody Mary</h4>
+          <p class="card-text">
+            In 1934, famed barman Fernand Petiot perfected the recipe for a
+            vodka-and-tomato juice cocktail, known as the Bloody Mary at The St.
+            Regis New York’s King Cole Bar. Originally christened the “Bloody
+            Mary”, the cocktail was renamed the “Red Snapper” so as not to
+            offend the hotel’s refined clientele. After more than 80 years, the
+            iconic Bloody Mary remains the signature cocktail of the St. Regis.
+          </p>
+          <!-- Card Button -->
+          <div class="text-center">
+            <button
+              type="button"
+              class="btn btn-info"
+              data-toggle="modal"
+              data-target="#modalRegular"
+            >
+              Regular map modal
+            </button>
+          </div>
 
-  <!-- Card -->
-  <div class="card mb-4">
-    <div class="view overlay">
-      <img class="card-img-top" src="/assests/img/bobxr-bam-boo-restaurent-3960-hor-clsc.jpg"
-        alt="Card image cap">
-      <a href="#!">
-        <div class="mask rgba-white-slight"></div>
-      </a>
-    </div>
+          <!--Modal: Name-->
+          <div
+            class="modal fade"
+            id="modalRegular"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="myModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-lg" role="document">
+              <!--Content-->
+              <div class="modal-content">
+                <!--Body-->
+                <div class="modal-body mb-0 p-0">
+                  <!--Google map-->
+                  <div
+                    id="map1"
+                    class="z-depth-1-half map-container-9"
+                    style="height: 400px;"
+                  >
+                    <iframe
+                      src="https://maps.google.com/maps?q=new%20delphi&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                      frameborder="0"
+                      style="border: 0;"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                </div>
 
-    <!--Card content-->
-    <div class="card-body">
-      <h4 class="card-title">Bam Boo Restaurant</h4>
-      <p class="card-text">Bam Boo revitalises the Resort’s Asian dining experience with the introduction of wok and teppanyaki options alongside our guests’ longtime sushi favourites.
-
-        Traditional Chinese wok dishes such as Kung Pao chicken and Sichuan style shrimp star on the opening menu while local lagoon fish is accomodate in a chinese style. On the Japanese menu, the Sushi Chef sublimate the freshest caught fish with delicate flair. Sushi bestsellers include the Volcano and the Red Dragon Roll. Variety is further enhanced with the addition of a Teppanyaki stove, visible from the counter seating, from which guests may order hot dishes.</p>
-      
-
-    </div>
-
-  </div>
-  
-  <!-- Card 2 -->
-  <div class="card mb-4">
-    <div class="view overlay">
-      <img class="card-img-top" src="/assests/img/bobxr-lagoon-restaurant-4148-hor-clsc.jpg"
-        alt="Card image cap">
-      <a href="#!">
-        <div class="mask rgba-white-slight"></div>
-      </a>
-    </div>
-
-    <!--Card content-->
-    <div class="card-body">
-      <h4 class="card-title">The Bora Bora VIP Bloody Mary</h4>
-      <p class="card-text">In 1934, famed barman Fernand Petiot perfected the recipe for a vodka-and-tomato juice cocktail, known as the Bloody Mary at The St. Regis New York’s King Cole Bar. Originally christened the “Bloody Mary”, the cocktail was renamed the “Red Snapper” so as not to offend the hotel’s refined clientele. After more than 80 years, the iconic Bloody Mary remains the signature cocktail of the St. Regis. </p>
-      <!-- Card Button -->
-      <div class="text-center">
-
-        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#modalRegular">Regular map modal</button>
-      </div>
-      
-      <!--Modal: Name-->
-      <div class="modal fade" id="modalRegular" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-      
-          <!--Content-->
-          <div class="modal-content">
-      
-            <!--Body-->
-            <div class="modal-body mb-0 p-0">
-      
-              <!--Google map-->
-              <div id="map1" class="z-depth-1-half map-container-9" style="height: 400px">
-                <iframe src="https://maps.google.com/maps?q=new%20delphi&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                  frameborder="0" style="border:0" allowfullscreen></iframe>
+                <!--Footer-->
+                <div class="modal-footer justify-content-center">
+                  <button type="button" class="btn btn-info btn-md">
+                    Save location <i class="fas fa-map-marker-alt ml-1"></i>
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-outline-info btn-md"
+                    data-dismiss="modal"
+                  >
+                    Close <i class="fas fa-times ml-1"></i>
+                  </button>
+                </div>
               </div>
-      
             </div>
-      
-            <!--Footer-->
-            <div class="modal-footer justify-content-center">
-      
-              <button type="button" class="btn btn-info btn-md">Save location <i class="fas fa-map-marker-alt ml-1"></i></button>
-              <button type="button" class="btn btn-outline-info btn-md" data-dismiss="modal">Close <i class="fas fa-times ml-1"></i></button>
-      
-            </div>
-      
           </div>
-          
+          <!--Modal: Name-->
         </div>
       </div>
-      <!--Modal: Name-->
+      <!-- Card 3 -->
+      <div class="card mb-4">
+        <!--Card image-->
+        <div class="view overlay">
+          <img
+            class="card-img-top"
+            src="/assests/img/tevairoa-restaurant.jpeg"
+            alt="Card image cap"
+          />
+          <a href="#!">
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
 
-    </div>
-
-  </div>
-  <!-- Card 3 -->
-  <div class="card mb-4">
-
-    <!--Card image-->
-    <div class="view overlay">
-      <img class="card-img-top" src="/assests/img/tevairoa-restaurant.jpeg"
-        alt="Card image cap">
-      <a href="#!">
-        <div class="mask rgba-white-slight"></div>
-      </a>
-    </div>
-
-    <!--Card content-->
-    <div class="card-body">
-      <h4 class="card-title">Card title 3</h4>
-      <p class="card-text">Text.</p>
-      <!-- Button -->
-      <button type="button" class="btn btn-light-blue btn-md">Read more</button>
-
-    </div>
-
-  </div>
-  <!-- Card -->
-
-          
+        <!--Card content-->
+        <div class="card-body">
+          <h4 class="card-title">Card title 3</h4>
+          <p class="card-text">Text.</p>
+          <!-- Button -->
+          <button type="button" class="btn btn-light-blue btn-md">
+            Read more
+          </button>
         </div>
       </div>
-</div>
-<!-- Card deck -->
+      <!-- Card -->
+    </div>
+    <!-- Card deck -->
 
-
-    
-<!-- Spa & Fitness Section -->
-<section id="spa" class="py-3"></section>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6 m-auto text-center">
-        <h1>Spa & Fitness</h1>
-        <p>Text</p>
+    <!-- Spa & Fitness Section -->
+    <section id="spa"></section>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 m-auto text-center">
+          <h2>Spa & Fitness</h2>
+          <p>Text</p>
+        </div>
       </div>
     </div>
-  </div>
 
-
-
-
-
-
-
-
-<!-- Tours Section -->
-<section id="tour" class="py-3"></section>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6 m-auto text-center">
-        <h1>Tours</h1>
-        <p>Text</p>
+    <!-- Tours Section -->
+    <section id="tour"></section>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 m-auto text-center">
+          <h2>Tours</h2>
+          <p>Text</p>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div id="map1"></div>
+    <div id="map1"></div>
     <div id="map2"></div>
     <div id="map3"></div>
 
-
-
     <!-- Optional JavaScript -->
-    <
-    
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDrcEZr8zvtVl8AnTK4pULnEECyl3Wh6Uc&callback=initMap"
-    async defer></script>
+
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDrcEZr8zvtVl8AnTK4pULnEECyl3Wh6Uc&callback=initMap"
+      async
+      defer
+    ></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
