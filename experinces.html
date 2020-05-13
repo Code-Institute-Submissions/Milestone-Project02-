@@ -173,7 +173,7 @@
                 <div class="modal-body mb-0 p-0">
                   <!--Google map-->
                   <div
-                    id="map1"
+                    id="mapCanvas1"
                     class="z-depth-1-half map-container-9"
                     style="height: 400px;"
                   >
@@ -325,7 +325,7 @@
                 <div class="modal-body mb-0 p-0">
                   <!--Google map-->
                   <div
-                    id="map2"
+                    id="mapCanvas2"
                     class="z-depth-1-half map-container-9"
                     style="height: 400px;"
                   >
@@ -533,10 +533,6 @@
     </div>
     <!-- Card deck -->
 
-    <div id="map1"></div>
-    <div id="map2"></div>
-    <div id="map3"></div>
-
     <!-- Footer start -->
     <footer id="footer" class="text-center p-4">
       <div class="container">
@@ -548,14 +544,9 @@
       </div>
     </footer>
     <!--Footer end-->
-
+    <div>map1</div>
     <!-- Optional JavaScript -->
 
-    <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDrcEZr8zvtVl8AnTK4pULnEECyl3Wh6Uc&callback=initMap"
-      async
-      defer
-    ></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -574,8 +565,14 @@
     ></script>
 
     <!--Up date your footer-->
-    <script src="/assets/js/footer.js"></script>
+    <script src="./assets/js/footer.js"></script>
 
-    <script src="/assets/js/maps.js"></script>
+    <script src="./assets/js/maps.js"></script>
+
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDrcEZr8zvtVl8AnTK4pULnEECyl3Wh6Uc&callback=initMap"
+      async
+      defer
+    ></script>
   </body>
 </html>
