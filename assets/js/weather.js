@@ -1,9 +1,19 @@
-// SELECT ELEMENTS
-const iconElement = document.querySelector('.weather-icon');
-const tempElement = document.querySelector('.temperature-value p');
-const descElement = document.querySelector('.temperature-description p');
-const locationElement = document.querySelector('.location p');
-const notificationElement = document.querySelector('.notification');
+const cityName = 'Vaitape';
+const appID = 'b5c7508c8f7b5e6bad730dc858c0756a';
+http://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${appID}.json
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 class Weather {
   constructor(city) {
