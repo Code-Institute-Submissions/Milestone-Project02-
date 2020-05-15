@@ -7,22 +7,96 @@ function initMap() {
   });
 }
 
-var map1, map2;
+//Lagoon Resturant, first map in Experinceces
 
-function drawMap() {
-  var mapCenter = new google.maps.LatLng(-33.865143, 151.2099); // Sydney
+var map;
+var service;
+var infowindow;
 
-  var mapOptions = {
-    zoom: 13,
-    mapTypeId: google.maps.MapTypeId.ROADMAP,
-    mapTypeControl: true,
-    center: mapCenter,
-    fullscreenControl: false,
+function initMap() {
+  var lagoon = new google.maps.LatLng(-16.486524, -151.633152);
+
+  lagoon = new google.maps.Map(document.getElementById('map'), {
+    center: lagoon,
+    zoom: 15,
+  });
+
+  var request = {
+    query: 'Museum of Contemporary Art Australia',
+    fields: ['name', 'geometry'],
   };
 
-  // Generate First Map
-  map1 = new google.maps.Map(document.getElementById('mapCanvas1'), mapOptions);
+  service = new google.maps.places.PlacesService(map);
 
-  // Generate Second Map
-  map2 = new google.maps.Map(document.getElementById('mapCanvas2'), mapOptions);
+  service.findPlaceFromQuery(request, function (results, status) {
+    if (status === google.maps.places.PlacesServiceStatus.OK) {
+      for (var i = 0; i < results.length; i++) {
+        createMarker(results[i]);
+      }
+
+      map.setCenter(results[0].geometry.location);
+    }
+  });
 }
+
+function createMarker(place) {
+  var marker = new google.maps.Marker({
+    map: map,
+    position: place.geometry.location,
+  });
+
+  google.maps.event.addListener(marker, 'click', function () {
+    infowindow.setContent(place.name);
+    infowindow.open(map, this);
+  });
+}
+
+//Resturant St.James, first map in Experinceces
+
+var map;
+var service;
+var infowindow;
+
+function initMap() {
+  var vaitape = new google.maps.LatLng(-16.499977, -151.752342);
+
+  infowindow = new google.maps.InfoWindow();
+
+  map = new google.maps.Map(document.getElementById('map'), {
+    center: vaitape,
+    zoom: 15,
+  });
+
+  var request = {
+    query: 'Restaurant St. James',
+    fields: ['name', 'geometry'],
+  };
+
+  service = new google.maps.places.PlacesService(map);
+
+  service.findPlaceFromQuery(request, function (results, status) {
+    if (status === google.maps.places.PlacesServiceStatus.OK) {
+      for (var i = 0; i < results.length; i++) {
+        createMarker(results[i]);
+      }
+
+      map.setCenter(results[0].geometry.location);
+    }
+  });
+}
+
+function createMarker(place) {
+  var marker = new google.maps.Marker({
+    map: map,
+    position: place.geometry.location,
+  });
+
+  google.maps.event.addListener(marker, 'click', function () {
+    infowindow.setContent(place.name);
+    infowindow.open(map, this);
+  });
+}
+
+//Second map in Experinceces
+
+//Third map in Experinceces
