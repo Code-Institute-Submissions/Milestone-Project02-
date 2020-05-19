@@ -87,7 +87,18 @@
       <canvas id="myChart" width="300" height="80"></canvas>
     </div>
 
-    <script></script>
+    <!-- Weather API -->
+    <div class="weather-container">
+      <div>
+        <input type="text" id="search_weather" placeholder="Enter city" />
+        <input type="submit" onclick="sendToPage()" />
+        <p class="city"></p>
+        <p class="weather">Weather:</p>
+        <p class="temp">Temperature:</p>
+        <p class="wind">Wind:</p>
+        <div></div>
+      </div>
+    </div>
     <!--Weather display End-->
 
     <!-- About section -->
@@ -311,7 +322,7 @@
       crossorigin="anonymous"
     ></script>
 
-    <script src="./assets/js/weather.js"></script>
+    <script src="/assets/js/weather.js"></script>
 
     <script src="./assets/js/chart.js"></script>
 
