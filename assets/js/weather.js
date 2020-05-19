@@ -1,5 +1,3 @@
-// API key = d17999dddb25e373cdd4d9bd55b6359e;
-
 var city;
 
 window.onload = function () {
