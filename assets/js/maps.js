@@ -7,51 +7,7 @@ function initMap() {
   });
 }
 
-//Lagoon Resturant, first map in Experinceces
-
-var map;
-var service;
-var infowindow;
-
-function initMap() {
-  var lagoon = new google.maps.LatLng(-16.486524, -151.633152);
-
-  lagoon = new google.maps.Map(document.getElementById('map'), {
-    center: lagoon,
-    zoom: 15,
-  });
-
-  var request = {
-    query: 'Museum of Contemporary Art Australia',
-    fields: ['name', 'geometry'],
-  };
-
-  service = new google.maps.places.PlacesService(map);
-
-  service.findPlaceFromQuery(request, function (results, status) {
-    if (status === google.maps.places.PlacesServiceStatus.OK) {
-      for (var i = 0; i < results.length; i++) {
-        createMarker(results[i]);
-      }
-
-      map.setCenter(results[0].geometry.location);
-    }
-  });
-}
-
-function createMarker(place) {
-  var marker = new google.maps.Marker({
-    map: map,
-    position: place.geometry.location,
-  });
-
-  google.maps.event.addListener(marker, 'click', function () {
-    infowindow.setContent(place.name);
-    infowindow.open(map, this);
-  });
-}
-
-//Resturant St.James, first map in Experinceces
+//Restaurant St.James, first map in Experinceces
 
 var map;
 var service;
