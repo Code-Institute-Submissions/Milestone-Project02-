@@ -1,146 +1,17 @@
-//conact page general map added:
-
-function initMap() {
-  var map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 15,
-    center: { lat: -16.5004, lng: -151.7415 },
-  });
-}
-
 //Restaurant St.James, first map in Experinceces
-
-var map;
-var service;
-var infowindow;
-
-function initMap() {
-  var vaitape = new google.maps.LatLng(-16.499977, -151.752342);
-
-  infowindow = new google.maps.InfoWindow();
-
-  map = new google.maps.Map(document.getElementById('map'), {
-    center: vaitape,
-    zoom: 15,
-  });
-
-  var request = {
-    query: 'Restaurant St. James',
-    fields: ['name', 'geometry'],
+var map1, map2;
+function drawMap() {
+  var mapOptions = {
+    zoom: 16,
+    mapTypeId: google.maps.MapTypeId.PLACESMAP,
+    mapTypeControl: true,
+    fullscreenControl: false,
   };
+  mapOptions.center = new google.maps.LatLng(-16.499977, -151.752342); // London
+  map1 = new google.maps.Map(document.getElementById('map1'), mapOptions);
 
-  service = new google.maps.places.PlacesService(map);
-
-  service.findPlaceFromQuery(request, function (results, status) {
-    if (status === google.maps.places.PlacesServiceStatus.OK) {
-      for (var i = 0; i < results.length; i++) {
-        createMarker(results[i]);
-      }
-
-      map.setCenter(results[0].geometry.location);
-    }
-  });
-}
-
-function createMarker(place) {
-  var marker = new google.maps.Marker({
-    map: map,
-    position: place.geometry.location,
-  });
-
-  google.maps.event.addListener(marker, 'click', function () {
-    infowindow.setContent(place.name);
-    infowindow.open(map, this);
-  });
-}
-
-//Second map in Experinceces
-
-var map;
-var service;
-var infowindow;
-
-function initMap() {
-  var vaitape = new google.maps.LatLng(-16.475781, -151.772474);
-
-  infowindow = new google.maps.InfoWindow();
-
-  map = new google.maps.Map(document.getElementById('pearl resort'), {
-    center: vaitape,
-    zoom: 15,
-  });
-
-  var request = {
-    query: ' Pearl Beach Resort',
-    fields: ['name', 'geometry'],
-  };
-
-  service = new google.maps.places.PlacesService(map);
-
-  service.findPlaceFromQuery(request, function (results, status) {
-    if (status === google.maps.places.PlacesServiceStatus.OK) {
-      for (var i = 0; i < results.length; i++) {
-        createMarker(results[i]);
-      }
-
-      map.setCenter(results[0].geometry.location);
-    }
-  });
-}
-
-function createMarker(place) {
-  var marker = new google.maps.Marker({
-    map: map,
-    position: place.geometry.location,
-  });
-
-  google.maps.event.addListener(marker, 'click', function () {
-    infowindow.setContent(place.name);
-    infowindow.open(map, this);
-  });
+  mapOptions.center = new google.maps.LatLng(52.370216, 4.895168); // Amsterdam
+  map2 = new google.maps.Map(document.getElementById('spa'), mapOptions);
 }
 
 //The Lagoonarium Third map in Experinceces
-
-var map;
-var service;
-var infowindow;
-
-function initMap() {
-  var lagoonarium = new google.maps.LatLng(-16.486202, -151.695067);
-
-  infowindow = new google.maps.InfoWindow();
-
-  map = new google.maps.Map(document.getElementById('map'), {
-    center: lagoonarium,
-    zoom: 15,
-  });
-
-  var request = {
-    query: 'Lagoonarium Bora Bora',
-    fields: ['name', 'geometry'],
-  };
-
-  service = new google.maps.places.PlacesService(map);
-
-  service.findPlaceFromQuery(request, function (results, status) {
-    if (status === google.maps.places.PlacesServiceStatus.OK) {
-      for (var i = 0; i < results.length; i++) {
-        createMarker(results[i]);
-      }
-
-      map.setCenter(results[0].geometry.location);
-    }
-  });
-}
-
-function createMarker(place) {
-  var marker = new google.maps.Marker({
-    map: map,
-    position: place.geometry.location,
-  });
-
-  google.maps.event.addListener(marker, 'click', function () {
-    infowindow.setContent(place.name);
-    infowindow.open(map, this);
-  });
-}
