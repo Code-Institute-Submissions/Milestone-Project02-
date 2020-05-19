@@ -81,24 +81,19 @@
       </div>
     </nav>
     <!--Nav Bar end-->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 m-auto text-center">
+          <div id="openweathermap-widget-21"></div>
+        </div>
+      </div>
+    </div>
 
     <!--Display weather in Boro Boro using chartjs-->
     <div>
-      <canvas id="myChart" width="300" height="80"></canvas>
+      <canvas id="myChart" width="300" height="60"></canvas>
     </div>
 
-    <!-- Weather API -->
-    <div class="weather-container">
-      <div>
-        <input type="text" id="search_weather" placeholder="Enter city" />
-        <input type="submit" onclick="sendToPage()" />
-        <p class="city"></p>
-        <p class="weather">Weather:</p>
-        <p class="temp">Temperature:</p>
-        <p class="wind">Wind:</p>
-        <div></div>
-      </div>
-    </div>
     <!--Weather display End-->
 
     <!-- About section -->
@@ -323,6 +318,27 @@
     ></script>
 
     <script src="./assets/js/weather.js"></script>
+
+    <script src="//openweathermap.org/themes/openweathermap/assets/vendor/owm/js/d3.min.js"></script>
+    <script>
+      window.myWidgetParam ? window.myWidgetParam : (window.myWidgetParam = []);
+      window.myWidgetParam.push({
+        id: 21,
+        cityid: '4033077',
+        appid: 'b5c7508c8f7b5e6bad730dc858c0756a',
+        units: 'metric',
+        containerid: 'openweathermap-widget-21',
+      });
+      (function () {
+        var script = document.createElement('script');
+        script.async = true;
+        script.charset = 'utf-8';
+        script.src =
+          '//openweathermap.org/themes/openweathermap/assets/vendor/owm/js/weather-widget-generator.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(script, s);
+      })();
+    </script>
 
     <script src="./assets/js/chart.js"></script>
 

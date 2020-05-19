@@ -1,51 +1,41 @@
-var city;
+$(document).ready(function () {
+  const baseURL =
+    'https://community-open-weather-map.p.rapidapi.com/weather?lat=-16.498520&lon=-151.741138&callback=test&id=2172797&units=%2522metric%2522%20or%20%2522imperial%2522&mode=xml%252C%20html';
 
-window.onload = function () {
-  city = 'Kenmare';
-  $.getJSON(
-    'https://api.openweathermap.org/data/2.5/weather?q=' +
-      city +
-      '&units=metric&appid=b5c7508c8f7b5e6bad730dc858c0756a',
-    function (data) {
-      console.log(data);
+  var settings = {
+    async: true,
+    crossDomain: true,
+    url: 'baseURL',
+    method: 'GET',
+    dataType: 'json',
+    data: { lat: 'lat' },
+    headers: {
+      'x-rapidapi-host': 'community-open-weather-map.p.rapidapi.com',
+      'x-rapidapi-key': 'e0424dd9b4msh9d649b578e70578p1d5f61jsnf2890bff5c2f',
+    },
+    success: successFunction,
+    error: errorFunction,
+  };
 
-      var icon =
-        'https://openweathermap.org/img/wn/' + data.weather[0].icon + '.png';
+  $.ajax(settings).done(function (response) {
+    console.log(response);
+  });
 
-      var temp = Math.floor(data.main.temp);
-      var weather = data.weather[0].main;
-      var wind = data.wind.speed;
+  function successFunction(data, textStatus, jqXHR) {
+    let icon =
+      'https://openweathermap.org/img/wn/' + data.weather[0].icon + '.png';
+    let temp = Math.floor(data.main.temp);
+    let weather = data.weather[0].main;
+    let wind = data.wind.speed;
 
-      $('.city').text('City: ' + city);
-      $('.icon').attr('src', icon);
-      $('.weather').text('Weather: ' + weather);
-      $('.temp').text('Temperature: ' + temp);
-      $('.wind').text('Wind: ' + wind);
-    }
-  );
-};
+    $('.city').text('City: ' + city);
+    $('.icon').attr('src', icon);
+    $('.weather').text('Weather: ' + weather);
+    $('.temp').text('Temperature: ' + temp);
+    $('.wind').text('Wind: ' + wind);
+  }
 
-function sendToPage() {
-  city = document.getElementById('search_weather').value;
-  $.getJSON(
-    'https://api.openweathermap.org/data/2.5/weather?q=' +
-      city +
-      '&units=metric&appid=b5c7508c8f7b5e6bad730dc858c0756a',
-    function (data) {
-      console.log(data);
-
-      var icon =
-        'https://openweathermap.org/img/wn/' + data.weather[0].icon + '.png';
-
-      var temp = Math.floor(data.main.temp);
-      var weather = data.weather[0].main;
-      var wind = data.wind.speed;
-
-      $('.city').text('City: ' + city);
-      $('.icon').attr('src', icon);
-      $('.weather').text('Weather: ' + weather);
-      $('.temp').text('Temperature: ' + temp);
-      $('.wind').text('Wind: ' + wind);
-    }
-  );
-}
+  function errorFunction(response) {
+    console.log(response);
+  }
+});
