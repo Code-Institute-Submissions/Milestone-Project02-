@@ -1,9 +1,15 @@
 //Contact page
+function drawMapContact() {
+  var map = new google.maps.Map(document.getElementById('bora'), {
+    zoom: 15,
+    center: { lat: -16.5004, lng: -151.7415 },
+  });
+}
 
 //The Lagoonarium Third map in Experinceces
 
-var map1, map2, map3, map4;
-function drawMap() {
+var map1, map2, map3;
+function drawMapsExperiences() {
   var mapOptions = {
     zoom: 17,
     mapTypeId: google.maps.MapTypeId.ROADMAP,
@@ -18,7 +24,4 @@ function drawMap() {
 
   mapOptions.center = new google.maps.LatLng(-16.489811, -151.71422); // Bora Bora Lagoonarium
   map3 = new google.maps.Map(document.getElementById('tours'), mapOptions);
-
-  mapOptions.center = new google.maps.LatLng(-16.497441, -151.736411); // Bora Bora
-  map4 = new google.maps.Map(document.getElementById('bora'), mapOptions);
 }
