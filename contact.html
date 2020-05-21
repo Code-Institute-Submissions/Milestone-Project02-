@@ -32,7 +32,7 @@
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"
     ></script>
-    <script type="text/javascript">
+    <script>
       (function () {
         emailjs.init('user_mfcy1uFkHBnn3CCYoSe3s');
       })();
@@ -93,6 +93,7 @@
     <!--Contact Section-->
     <div id="contact" class="section white center">
       <div class="container">
+        <h5 class="t-black">CONTACT US</h5>
         <h6 class="center">
           For any questions or queries please fill out the form below.
         </h6>
@@ -150,11 +151,21 @@
         </form>
       </div>
     </div>
+
     <!--Contact Form ends-->
 
     <!--Contact Section ends-->
 
-    <div id="map"></div>
+    <div id="block-wrp">
+      <div class="block-item">
+        <div id="boraBora" class="map-item"></div>
+        <span class="city-name">Vaitape</span>
+      </div>
+    </div>
+    
+
+      
+    
 
     <!-- Footer start -->
     <footer id="footer" class="text-center p-4">
@@ -168,15 +179,17 @@
     </footer>
     <!--Footer end-->
 
-    <!--Link to maps.js-->
-    <script src="./assets/js/maps.js"></script>
+     <!--Link to maps.js-->
+     <script src="./assets/js/maps.js"></script>
 
-    <!--Google api key for contact page-->
-    <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDrcEZr8zvtVl8AnTK4pULnEECyl3Wh6Uc&callback=initMap"
-      async
-      defer
-    ></script>
+     <!--Google api key -->
+ 
+     <script
+       async
+       defer
+       src="http://maps.google.com/maps/api/js?key=AIzaSyDrcEZr8zvtVl8AnTK4pULnEECyl3Wh6Uc&callback=drawMap"
+     ></script>
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -198,7 +211,11 @@
 
     <script src="./assets/js/email.js"></script>
 
+    
+
     <!--Up date your footer-->
     <script src="./assets/js/footer.js"></script>
+
+   
   </body>
 </html>
