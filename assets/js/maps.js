@@ -19,6 +19,6 @@ function drawMap() {
   mapOptions.center = new google.maps.LatLng(-16.489811, -151.71422); // Bora Bora Lagoonarium
   map3 = new google.maps.Map(document.getElementById('tours'), mapOptions);
 
-  mapOptions.center = new google.maps.LatLng(-16.497441, -151.73605); // Bora Bora
-  map4 = new google.maps.Map(document.getElementById('boraBora'), mapOptions);
+  mapOptions.center = new google.maps.LatLng(-16.497441, -151.736411); // Bora Bora
+  map4 = new google.maps.Map(document.getElementById('bora'), mapOptions);
 }
