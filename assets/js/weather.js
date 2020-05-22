@@ -39,3 +39,10 @@ $(document).ready(function () {
     console.log(response);
   }
 });
+
+// Display Weather
+function displayWeather() {
+  iconElement.innerHTML = `<img src="icons/${weather.iconId}.png"/>`;
+  tempElement.innerHTML = `${weather.temperature.value}°<span>C</span>`;
+  descElement.innerHTML = weather.description;
+}
