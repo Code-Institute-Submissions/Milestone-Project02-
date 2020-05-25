@@ -35,9 +35,6 @@ $(document).ready(function () {
       $('#icon').addClass(data.currently.icon);
     }
 
-    var cel = data.currently.temperature;
-    temp.innerText = Math.floor(data.main.temp) + 'F';
-
     function errorFunction(response) {
       console.log(response);
     }
