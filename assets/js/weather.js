@@ -29,12 +29,14 @@ $(document).ready(function () {
       let weather = data.weather[0].main;
       let wind = data.wind.speed;
 
-      $('.city').text('City: ' + city);
-      $('.icon').attr('src', icon);
-      $('.weather').text('Weather: ' + weather);
-      $('.temp').text('Temperature: ' + temp);
-      $('.wind').text('Wind: ' + wind);
+      $('#weather').html(data.currently.summary);
+      $('#temp').html(data.currently.temperature);
+
+      $('#icon').addClass(data.currently.icon);
     }
+
+    var cel = data.currently.temperature;
+    temp.innerText = Math.floor(data.main.temp) + 'F';
 
     function errorFunction(response) {
       console.log(response);

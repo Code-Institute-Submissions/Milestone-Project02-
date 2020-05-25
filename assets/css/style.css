@@ -38,3 +38,9 @@
   height: 10%;
   line-height: 2em;
 }
+
+/* slick arrows styling*/
+.slick-prev:before,
+.slick-next:before {
+  color: black !important;
+}
