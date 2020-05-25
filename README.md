@@ -46,7 +46,7 @@ The below is based on the user I identified, right from the stat I felt this had
 
 I have included the wireframes for my site in the Documentation folder in this repository.
 
-[**Desktop**](./)
+[**Desktop**](https://github.com/philw1981/Milestone-Project02-/blob/master/wireframes/Homepage%20Bora%20Bora.png)
 
 [**Tablet Wireframes**](?)
 
