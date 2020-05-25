@@ -46,11 +46,11 @@ The below is based on the user I identified, right from the stat I felt this had
 
 I have included the wireframes for my site in the Documentation folder in this repository.
 
+[**Desktop**](./)
+
+[**Tablet Wireframes**](?)
+
 [**Mobile Wireframes**](?)
-
-[**Tablet Wireframes**]?)
-
-[**Laptop/Desktop**](?)
 
 ### Surface
 
