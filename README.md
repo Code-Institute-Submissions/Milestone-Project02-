@@ -40,11 +40,11 @@ The below is based on the user I identified, right from the stat I felt this had
 
 **Experiences & Activities** - This page goes into detail about what you can do and has a wide ranging selection to cater to all the users mentioned.
 
-**Contact**\_ - After the user has experienced the website if they still have any questions this page is here to encourage contact and help develop a relationship with potential customers.
+**Contact** - After the user has experienced the website if they still have any questions this page is here to encourage contact and help develop a relationship with potential customers.
 
 ### Skeleton
 
-I have included the wireframes for my site in the Documentation folder in this repository.
+I have included the wireframes for my site in the wireframes folder in this repository.
 
 [**Desktop Home**](https://github.com/philw1981/Milestone-Project02-/blob/master/wireframes/Homepage%20Bora%20Bora.png)
 
