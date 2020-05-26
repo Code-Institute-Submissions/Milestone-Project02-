@@ -94,7 +94,7 @@ The palette used was very light and bright I feel this helps the content (galler
 
 ### Future Features
 
-1.- The videos on the homepage are big files and can slow the performance of the site down, espeially on mobile, these could be replaced when viewed in mobile or maybe compressed to help reduce any lag.
+1.- The videos on the homepage are big files and can slow the performance of the site down, especially on mobile, these could be replaced when viewed in mobile or maybe compressed to help reduce any lag.
 2.- Openweather app could be integrated further using more of the data and connecting with chartjs to provide real time data that the user would find useful when choosing to travel.
 3.- In experiences & activities section instead of one static photo a carousel would fit well to showcase the sections visually.
 4.- A booking system/availability calendar would be a nice feature to integrate.
@@ -110,13 +110,13 @@ I have done lots of testing using the developer tools in Google Chrome.This help
 
 Testing was done at every stage, making sure all links work and that the website was always responsive. This site was tested across multiple browsers (Chrome,Internet Explorer & FireFox ) it has also been tested on multiple mobile devices (iPhone 4, 5, 7: Chrome, iPad & Samsung Galaxy) to ensure of responsiveness.
 
-Homepage- The video fills the screen and could feel overbearing on smaller devices, I left this as is due to the effect it gives on larger screens biut would be looked at with further development.
+Homepage- The video fills the screen and could feel overbearing on smaller devices, I left this as it is due to the effect it gives on larger screens but would be looked at with further development.
 
 At different times I did troubleshooting with my mentor and student support on my java script
 
 Emailjs- This form has an error message if the user fails to fill out the form correctly.
 I ran the site through GTmertix to get a guide to how the site performed.
-Finally had friends & family test the website for me to feedback any issues or comments regarding the userability and layout
+Finally had friends & family test the website for me to feedback any issues or comments regarding the usability and layout
 
 ### Automated Testing
 
@@ -154,3 +154,25 @@ I created my project using Visual Code Studio. My file structure was then create
 - [Gmail](https://www.gmail.com/)
 - [GTmetrix](gtmetrix.com)
 - [Google Fonts](https://fonts.google.com/)
+
+# Credits
+
+### Content
+
+Below is a list of websites I rew inspiration from and used content (images,text-reworded) for deomstration purposes only
+
+- [Expedia](https://www.expedia.co.uk/Bora-Bora.d602861.Holidays-City-Breaks)
+- [Four Seasons](https://www.fourseasons.com/borabora/)
+- [Elegant Resorts](https://www.elegantresorts.co.uk/luxury-properties/south-pacific/four-seasons-resort-bora-bora)
+
+### Media
+
+- The photos used in my webpage were from Google Images, pexels
+- The videos from youtube & [Coverr](https://coverr.co/)
+
+### Acknowledgements
+
+I would like to thank the following for support through this project
+
+- Reuben Ferrante
+- Student Support
