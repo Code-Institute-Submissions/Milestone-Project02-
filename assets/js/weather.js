@@ -34,8 +34,8 @@ $(document).ready(function () {
       $('.temp').text('Temperature: ' + temp);
       $('.wind').text('Wind: ' + wind);
 
-      var temp = $('#temperature-value')[0];
-      temp.innerText = Math.floor(data.main.temp) + 'F';
+      var temp = $('#temperature-value');
+      temp.innerHTML = Math.floor(data.main.temp) + 'F';
     }
 
     function errorFunction(response) {
