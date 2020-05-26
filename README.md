@@ -73,15 +73,48 @@ The palette used was very light and bright I feel this helps the content (galler
 
 ### Homepage Features
 
+1.- Video carousel containing three videos auto scrolling.
+2.- Each video has a modal which contains another video to show off all the sights and sell the location tom potential customers.
+
 ### About Features
+
+1.- Open weather....
+2.- Chartjs, hard coded line chart to show the average highest temperature each month of the year to help inform customers.
+3.- Photo Gallery using lightbox to aid the user in scrolling through the photos and even navigation back to the current page.
+4.- Testimonials using slick slider with easy to use navigation arrows to reinforce the quality of the company.
 
 ### Experiences & Activities Features
 
+1.- Multiple google maps windows navigating the user to the different locations within each defined section which would help the user get an idea of ideal destinations within Bora Bora.
+
 ### Contact Features
+
+1.- Another google map window giving an overview of Bora Bora.
+2.- A contact us form connected with emailjs to encourage users to get in touch so the company can start a dialogue with potential customers.
 
 ### Future Features
 
+1.- The videos on the homepage are big files and can slow the performance of the site down, espeially on mobile, these could be replaced when viewed in mobile or maybe compressed to help reduce any lag.
+2.- Openweather app could be integrated further using more of the data and connecting with chartjs to provide real time data that the user would find useful when choosing to travel.
+3.- In experiences & activities section instead of one static photo a carousel would fit well to showcase the sections visually.
+4.- A booking system/availability calendar would be a nice feature to integrate.
+
 ## Testing
+
+I have done lots of testing using the developer tools in Google Chrome.This helped especially when trying to troubleshoot java script issues. Below are issues that came up and needed troubleshooting
+
+1.-Mulitple openweather issues not displaying in about page.
+2.-Multiple google maps issues resolved by doing two functions function drawMapContact & function drawMapsExperiences.
+3.- Google maps not showing on deployed site was resolved by adding an "s" to http.
+4.-Emailjs issue of http error 405 after form sent.
+
+Testing was done at every stage, making sure all links work and that the website was always responsive. This site was tested across multiple browsers (Chrome,Internet Explorer & FireFox ) it has also been tested on multiple mobile devices (iPhone 4, 5, 7: Chrome, iPad & Samsung Galaxy) to ensure of responsiveness.
+
+At different times I did troubleshooting with my mentor and student support on my java script
+
+Emailjs- This form has an error message if the user fails to fill out the form correctly.
+I ran the site through GTmertix to get a guide to how the site performed.
+Finally had friends & family test the website for me to feedback any issues or comments regarding the userability and layout
 
 ### Automated Testing
 
@@ -95,6 +128,8 @@ This website is hosted and deployed on GitHub Pages.
 The website can be viewed [Here](https://philw1981.github.io/Milestone-Project02-/)
 
 ##### How to deploy website on Github Pages.
+
+I created my project using Visual Code Studio. My file structure was then created within Milestone-Project02-
 
 - Click on name of repository that you want to deployed.
 
@@ -115,7 +150,5 @@ The website can be viewed [Here](https://philw1981.github.io/Milestone-Project02
 - [Website Responsive Testing](Toolresponsivetesttool.com)
 - [W3 Validator](https://validator.w3.org/nu/)
 - [Gmail](https://www.gmail.com/)
-- [TinyPNG](https://tinypng.com/) ?
-- [GTmetrix](gtmetrix.com) ?
+- [GTmetrix](gtmetrix.com)
 - [Google Fonts](https://fonts.google.com/)
--
