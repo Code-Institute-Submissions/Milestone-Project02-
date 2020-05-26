@@ -114,7 +114,8 @@ Homepage- The video fills the screen and could feel overbearing on smaller devic
 
 At different times I did troubleshooting with my mentor and student support on my java script
 
-Emailjs- This form has an error message if the user fails to fill out the form correctly.
+Emailjs- Had a 404 error after form was filled out, resolved by having this line only in the html <form onsubmit="return sendMail(this);">.
+This form has an error message if the user fails to fill out the form correctly.
 I ran the site through GTmertix to get a guide to how the site performed.
 Finally had friends & family test the website for me to feedback any issues or comments regarding the usability and layout
 
