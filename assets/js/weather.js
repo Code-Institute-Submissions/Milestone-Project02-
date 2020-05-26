@@ -23,7 +23,6 @@ $(document).ready(function () {
   function successFunction(data, textStatus, jqXHR) {
     let icon =
       'https://openweathermap.org/img/wn/' + data.weather[0].icon + '.png';
-    let temp = Math.floor(data.main.temp);
     let weather = data.weather[0].main;
     let wind = data.wind.speed;
     var temp = $('#temperature-value');
