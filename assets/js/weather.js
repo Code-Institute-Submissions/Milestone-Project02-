@@ -42,5 +42,4 @@ $(document).ready(function () {
     tempElement.innerHTML = `${weather.temperature.value}°<span>C</span>`;
     descElement.innerHTML = weather.description;
   }
-
-  
+});
