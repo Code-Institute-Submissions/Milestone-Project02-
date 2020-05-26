@@ -110,6 +110,8 @@ I have done lots of testing using the developer tools in Google Chrome.This help
 
 Testing was done at every stage, making sure all links work and that the website was always responsive. This site was tested across multiple browsers (Chrome,Internet Explorer & FireFox ) it has also been tested on multiple mobile devices (iPhone 4, 5, 7: Chrome, iPad & Samsung Galaxy) to ensure of responsiveness.
 
+Homepage- The video fills the screen and could feel overbearing on smaller devices, I left this as is due to the effect it gives on larger screens biut would be looked at with further development.
+
 At different times I did troubleshooting with my mentor and student support on my java script
 
 Emailjs- This form has an error message if the user fails to fill out the form correctly.
