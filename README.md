@@ -46,17 +46,15 @@ The below is based on the user I identified, right from the stat I felt this had
 
 I have included the wireframes for my site in the wireframes folder in this repository.
 
-[**Desktop Home**](https://github.com/philw1981/Milestone-Project02-/blob/master/wireframes/Homepage%20Bora%20Bora.png)
+[**Desktop/Tablet Home**](https://github.com/philw1981/Milestone-Project02-/blob/master/wireframes/Homepage%20Bora%20Bora.png)
 
-[**Desktop Packages & things to do/Now Experiences**](https://github.com/philw1981/Milestone-Project02-/blob/master/wireframes/Packages%20%26%20things%20to%20do.png)
+[**Desktop/Tablet Packages & things to do/Now Experiences**](https://github.com/philw1981/Milestone-Project02-/blob/master/wireframes/Packages%20%26%20things%20to%20do.png)
 
-[**Desktop About**](https://github.com/philw1981/Milestone-Project02-/blob/master/wireframes/about.png)
+[**Desktop/Tablet About**](https://github.com/philw1981/Milestone-Project02-/blob/master/wireframes/about.png)
 
-[**Desktop Contact**](https://github.com/philw1981/Milestone-Project02-/blob/master/wireframes/contact.png)
+[**Desktop/Tablet Contact**](https://github.com/philw1981/Milestone-Project02-/blob/master/wireframes/contact.png)
 
-[**Tablet Wireframes**](?)
-
-[**Mobile Wireframes**](?)
+[**Mobile Home Wireframes**]()
 
 ### Surface
 
