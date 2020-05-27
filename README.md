@@ -80,10 +80,9 @@ The palette used was very light and bright I feel this helps the content (galler
 
 ### About Features
 
-1.- Open weather....
-2.- Chartjs, hard coded line chart to show the average highest temperature each month of the year to help inform customers.
-3.- Photo Gallery using lightbox to aid the user in scrolling through the photos and even navigation back to the current page.
-4.- Testimonials using slick slider with easy to use navigation arrows to reinforce the quality of the company.
+1.- Chartjs, hard coded line chart to show the average highest temperature each month of the year to help inform customers.
+2.- Photo Gallery using lightbox to aid the user in scrolling through the photos and even navigation back to the current page.
+3.- Testimonials using slick slider with easy to use navigation arrows to reinforce the quality of the company.
 
 ### Experiences & Activities Features
 
@@ -102,6 +101,8 @@ The palette used was very light and bright I feel this helps the content (galler
 4.- A booking system/availability calendar would be a nice feature to integrate.
 
 ## Testing
+
+I had to remove the open weather feature last minute, I was having several issues and had seeked help from my mentor & student support and was making very little progress, at one point student support was unable to help and time forced me to remove it.
 
 I have done lots of testing using the developer tools in Google Chrome.This helped especially when trying to troubleshoot java script issues. Below are issues that came up and needed troubleshooting
 
