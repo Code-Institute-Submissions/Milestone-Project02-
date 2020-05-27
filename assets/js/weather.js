@@ -6,12 +6,13 @@ $(document).ready(function () {
     data = data.slice(5, -1); // clean the data
     data = JSON.parse(data);
     console.log(data);
-    let icon =
-      'https://openweathermap.org/img/wn/' + data.weather[0].icon + '.png';
+    let icon = ('https://openweathermap.org/img/wn/' = $('#weather-icon'));
+    +'.png';
     let weather = data.weather[0].main;
     let wind = data.wind.speed;
     var temp = $('#temperature-value');
-    weather.description = data.weather[0].description;
+    weather.description = $('temperature-description');
+    weather.iconId = $('#weather-icon');
     console.log(data.main.temp);
     temp.text(Math.floor(data.main.temp) + 'F');
   }
